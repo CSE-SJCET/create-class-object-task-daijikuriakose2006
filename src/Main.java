@@ -1,22 +1,25 @@
-public class Main {
-     public static class Student {
-        String name;
-        int rollNumber;
-        char grade;
-
-        public void displayDetails() {
-            System.out.println("Name = " + name);
-            System.out.println("Roll Number = " + rollNumber);
-            System.out.println("Grade = " + grade);
-        }
+// TODO: Create a class called Student with name, rollNumber, and grade
+class Student{
+    String name;
+    int rollNumber;
+    char grade;
+    Student(String name,int rollNumber,char grade){
+        this.name = name;
+        this.rollNumber = rollNumber;
+        this.grade = grade;
     }
-      public static void main(String[] args) {
-        Student student = new Student();
+    // TODO: Create a method to display student details
+    public void displayDetails(){
+        System.out.println("Name:" +name);
+        System.out.println("Roll Number:" +rollNumber);
+        System.out.println("Grade:" + grade);
+    }
+}
 
-        student.name = "Daiji";
-        student.rollNumber = 29;
-        student.grade = 'A';
-
-        student.displayDetails();
+public class Demo {
+    public static void main(String[] args) {
+        // TODO: Create a Student object and call the method to display details
+        Student students = new Student("Daiji",29,'A');
+        students.displayDetails();
     }
 }
