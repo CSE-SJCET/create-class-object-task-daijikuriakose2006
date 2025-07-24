@@ -16,7 +16,7 @@ class Student{
     }
 }
 
-public class Demo {
+public class Main {
     public static void main(String[] args) {
         // TODO: Create a Student object and call the method to display details
         Student students = new Student("Daiji",29,'A');
